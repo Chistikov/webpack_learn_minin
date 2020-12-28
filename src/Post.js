@@ -6,3 +6,5 @@ function Post(title) {
     return `Пост: ${this.title} Дата создания: ${this.date}`;
   };
 }
+
+export default Post;
