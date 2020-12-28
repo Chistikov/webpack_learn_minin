@@ -14,7 +14,8 @@ module.exports = {
   output: {
     // указываем название выходных файлов.
     // в [name] будет подставляться имя из ключей объекта entry
-    filename: "[name].bundle.js",
+    // в [contenthash] будет подставляться уникальный хеш, что бы избежать кеширования
+    filename: "[name].[contenthash].bundle.js",
     // указываем имя папки
     // __dirname - текущая директория
     path: path.resolve(__dirname, "dist"),
