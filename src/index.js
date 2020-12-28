@@ -1,3 +1,5 @@
+import "./styles/style.css";
+
 import Post from "./Post.js";
 
 let post = new Post("Пост №1");
