@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   // Указываем мод сборки development | production
@@ -24,6 +25,8 @@ module.exports = {
 
   // все плагины должны быть новыми экземплярами класса, созданными через new
   plugins: [
+    new CleanWebpackPlugin(),
+
     new HtmlWebpackPlugin({
       filename: "index.html",
       // когда подключен template установка title не работает
