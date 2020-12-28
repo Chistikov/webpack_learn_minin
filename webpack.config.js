@@ -1,4 +1,5 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   // Указываем мод сборки development | production
@@ -20,4 +21,14 @@ module.exports = {
     // __dirname - текущая директория
     path: path.resolve(__dirname, "dist"),
   },
+
+  // все плагины должны быть новыми экземплярами класса, созданными через new
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: "index.html",
+      // когда подключен template установка title не работает
+      // title: "Webpack learn",
+      template: "./src/template.html",
+    }),
+  ],
 };
