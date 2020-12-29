@@ -60,13 +60,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/assets/jsonFile.json":
+/*!**********************************!*\
+  !*** ./src/assets/jsonFile.json ***!
+  \**********************************/
+/***/ ((module) => {
+
+eval("module.exports = JSON.parse(\"{\\\"name\\\":\\\"Vlad\\\",\\\"surname\\\":\\\"Chistikov\\\"}\");\n\n//# sourceURL=webpack://webpack_learn_minin/./src/assets/jsonFile.json?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ \"./src/styles/style.css\");\n/* harmony import */ var _Post_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Post.js */ \"./src/Post.js\");\n\n\n\n\nlet post = new _Post_js__WEBPACK_IMPORTED_MODULE_1__.default(\"Пост №1\");\n\nconsole.log(post.toString());\n\n\n//# sourceURL=webpack://webpack_learn_minin/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ \"./src/styles/style.css\");\n/* harmony import */ var _assets_jsonFile_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/jsonFile.json */ \"./src/assets/jsonFile.json\");\n/* harmony import */ var _Post_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Post.js */ \"./src/Post.js\");\n\n\n\n\n\nlet post = new _Post_js__WEBPACK_IMPORTED_MODULE_2__.default(\"Пост №1\");\n\nconsole.log(post.toString());\n\nconsole.log(_assets_jsonFile_json__WEBPACK_IMPORTED_MODULE_1__);\n\n\n//# sourceURL=webpack://webpack_learn_minin/./src/index.js?");
 
 /***/ })
 
