@@ -48,6 +48,10 @@ module.exports = {
         // style-loader --- позволяет добавить стили описанные в css в секцию <head></head>
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(png|jpg|svg|gif)$/,
+        use: ["file-loader"],
+      },
     ],
   },
 };

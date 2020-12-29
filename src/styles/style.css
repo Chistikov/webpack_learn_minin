@@ -2,3 +2,12 @@ body {
   font-family: Roboto;
   color: red;
 }
+
+.img {
+  background-image: url("../assets/images/iphone.jpg");
+  background-size: contain;
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
